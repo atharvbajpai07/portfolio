@@ -28,7 +28,7 @@ export default function Contact() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                     <a
                         href="mailto:atharvbajpai07@gmail.com"
-                        className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-background bg-white rounded-full overflow-hidden transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
+                        className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-black bg-white rounded-full overflow-hidden transition-all hover:scale-105 active:scale-95 w-full sm:w-auto"
                     >
                         <span className="relative flex items-center gap-2">
                             <Mail className="w-5 h-5" /> Say Hello

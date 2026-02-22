@@ -44,16 +44,16 @@ export default function Skills() {
 
                         <div className="flex flex-wrap gap-3">
                             {items.map((skill, i) => (
-                                <motion.span
+                                <motion.div
                                     key={skill}
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: (idx * 0.1) + (i * 0.05) }}
-                                    className="px-4 py-2 bg-white/5 hover:bg-primary/20 border border-white/5 hover:border-primary/50 rounded-lg text-sm font-sans text-white/80 hover:text-white transition-all cursor-default shadow-[0_4px_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:-translate-y-1"
+                                    className="inline-flex items-center justify-center px-4 py-2 bg-white/5 hover:bg-primary/20 border border-white/5 hover:border-primary/50 rounded-lg text-sm font-sans text-white/80 hover:text-white transition-all cursor-default shadow-[0_4px_10px_rgba(0,0,0,0.1)] hover:shadow-[0_0_15px_rgba(139,92,246,0.3)] hover:-translate-y-1"
                                 >
                                     {skill}
-                                </motion.span>
+                                </motion.div>
                             ))}
                         </div>
                     </motion.div>
