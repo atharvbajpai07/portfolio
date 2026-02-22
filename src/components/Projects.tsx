@@ -34,7 +34,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="projects" className="w-full relative py-20 z-10">
+        <section id="projects" className="w-full relative py-32 z-10 min-h-screen flex flex-col justify-center">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

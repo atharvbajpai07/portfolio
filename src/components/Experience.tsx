@@ -41,7 +41,7 @@ const experiences = [
 
 export default function Experience() {
     return (
-        <section id="experience" className="w-full relative py-20">
+        <section id="experience" className="w-full relative py-32 min-h-screen flex flex-col justify-center">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
