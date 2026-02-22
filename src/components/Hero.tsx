@@ -66,7 +66,7 @@ export default function Hero() {
                             View Work <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </span>
                     </a>
-                    <a href="#" className="inline-flex items-center justify-center px-8 py-4 font-medium text-white/80 hover:text-white transition-colors gap-2">
+                    <a href="/Atharv_Bajpai_Resume.pdf" download="Atharv_Bajpai_Resume.pdf" className="inline-flex items-center justify-center px-8 py-4 font-medium text-white/80 hover:text-white transition-colors gap-2">
                         <Download className="w-4 h-4" /> Resume
                     </a>
                 </motion.div>
