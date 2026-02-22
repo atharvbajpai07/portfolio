@@ -46,15 +46,15 @@ export default function Experience() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="mb-12"
+                className="mb-12 text-center"
             >
                 <h2 className="text-4xl md:text-5xl font-display font-bold">
                     Experience<span className="text-primary">.</span>
                 </h2>
-                <p className="text-white/50 mt-4 text-lg">Where I've built and scaled products.</p>
+                <p className="text-white/50 mt-4 text-base md:text-lg mx-auto">Where I've built and scaled products.</p>
             </motion.div>
 
-            <div className="relative border-l border-white/10 ml-4 md:ml-0 pl-8 md:pl-12 flex flex-col gap-16">
+            <div className="relative border-l border-white/10 ml-4 md:mx-auto pl-8 md:pl-12 flex flex-col gap-16 max-w-3xl">
                 {experiences.map((exp, index) => (
                     <motion.div
                         key={index}

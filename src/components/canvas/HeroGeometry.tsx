@@ -2,9 +2,10 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Float, PresentationControls } from "@react-three/drei";
 import * as THREE from "three";
+import { MotionValue } from "framer-motion";
 
 interface HeroGeometryProps {
-    scrollProgress: number;
+    scrollProgress: MotionValue<number>;
 }
 
 export default function HeroGeometry({ scrollProgress }: HeroGeometryProps) {
@@ -21,8 +22,9 @@ export default function HeroGeometry({ scrollProgress }: HeroGeometryProps) {
         );
 
         // Fade out / move up as user scrolls down
-        meshRef.current.position.y = scrollProgress * 5; // Move up out of view
-        const targetOpacity = Math.max(0, 1 - scrollProgress * 5); // Fade out quickly
+        const scroll = scrollProgress.get();
+        meshRef.current.position.y = scroll * 5; // Move up out of view
+        const targetOpacity = Math.max(0, 1 - scroll * 5); // Fade out quickly
 
         const material = meshRef.current.material as THREE.MeshPhysicalMaterial;
         if (material) {

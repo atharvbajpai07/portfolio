@@ -14,7 +14,7 @@ export default function Hero() {
 
     return (
         <section ref={ref} className="min-h-screen pt-32 pb-16 flex flex-col justify-center relative">
-            <motion.div style={{ y, opacity }} className="max-w-4xl relative z-10">
+            <motion.div style={{ y, opacity }} className="max-w-4xl mx-auto relative z-10 flex flex-col items-center text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
-                    className="text-lg sm:text-lg md:text-xl text-white/50 font-sans max-w-2xl mb-10 leading-relaxed"
+                    className="text-base sm:text-lg md:text-xl text-white/50 font-sans max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
                     Frontend Engineer with 4+ years of experience building scalable web and mobile products. Focused on React, React Native, and pushing the boundaries of what's possible in the browser.
                 </motion.p>

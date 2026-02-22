@@ -1,11 +1,12 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import { MotionValue } from "framer-motion";
 import { EffectComposer, Bloom, Vignette } from "@react-three/postprocessing";
 import Particles from "./Particles";
 import HeroGeometry from "./HeroGeometry";
 
 interface SceneProps {
-    scrollProgress: number; // 0 to 1
+    scrollProgress: MotionValue<number>;
 }
 
 export default function Scene({ scrollProgress }: SceneProps) {

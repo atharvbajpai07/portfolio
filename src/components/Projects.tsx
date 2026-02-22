@@ -39,13 +39,13 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
-                className="mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6"
+                className="mb-16 flex flex-col items-center text-center gap-6"
             >
                 <div>
                     <h2 className="text-4xl md:text-5xl font-display font-bold">
                         Selected Work<span className="text-primary">.</span>
                     </h2>
-                    <p className="text-white/50 mt-4 text-lg max-w-lg">
+                    <p className="text-white/50 mt-4 text-base md:text-lg max-w-lg mx-auto">
                         A collection of projects focusing on high-performance web applications and mobile experiences.
                     </p>
                 </div>

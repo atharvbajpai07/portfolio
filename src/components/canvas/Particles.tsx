@@ -1,9 +1,10 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
+import { MotionValue } from "framer-motion";
 
 interface ParticlesProps {
-    scrollProgress: number;
+    scrollProgress: MotionValue<number>;
 }
 
 export default function Particles({ scrollProgress }: ParticlesProps) {
@@ -44,9 +45,11 @@ export default function Particles({ scrollProgress }: ParticlesProps) {
         if (!pointsRef.current) return;
         const time = state.clock.getElapsedTime();
 
+        const scroll = scrollProgress.get();
+
         // Slowly rotate the entire particle system
-        pointsRef.current.rotation.y = time * 0.05 + scrollProgress * Math.PI * 2;
-        pointsRef.current.rotation.x = time * 0.02 + scrollProgress * Math.PI;
+        pointsRef.current.rotation.y = time * 0.05 + scroll * Math.PI * 2;
+        pointsRef.current.rotation.x = time * 0.02 + scroll * Math.PI;
 
         // Add subtle parallax effect based on mouse hover (captured globally by parent if needed)
         // state.pointer contains normalized mouse coordinates (-1 to +1)
