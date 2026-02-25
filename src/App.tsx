@@ -4,6 +4,7 @@ import Scene from "./components/canvas/Scene";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
+import Work from "./components/Work";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
@@ -29,9 +30,10 @@ function App() {
       {/* Content wrapper */}
       <div className="relative z-10 flex flex-col items-center">
         <Navbar />
-        <main className="w-full max-w-7xl px-6 sm:px-12 md:px-24 flex flex-col gap-32 pb-32">
+        <main className="w-full max-w-7xl px-6 sm:px-12 md:px-24 flex flex-col gap-16 pb-32">
           <Hero />
           <Experience />
+          <Work />
           <Projects />
           <Skills />
           <Contact />

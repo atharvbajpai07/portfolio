@@ -1,34 +1,30 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
     {
         title: "Reclame Hub",
         description: "SEO-Optimized marketing site for a digital agency. Built to hit 95+ Lighthouse scores for performance and accessibility using React and lazy loading.",
         tags: ["React", "Netlify", "SEO", "Tailwind CSS"],
-        link: "#",
-        github: "#"
+        link: "#"
     },
     {
         title: "ShopEase",
         description: "Full-Stack e-commerce platform with a mobile-first layout to reduce checkout friction. Features product filtering and seamless buying flow.",
         tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "MongoDB"],
-        link: "#",
-        github: "#"
+        link: "#"
     },
     {
         title: "Bruised Passports",
         description: "High-performance React Native app achieving a 4.8/5 rating with 10,000+ installs through optimized bundle size and asset delivery caching.",
         tags: ["React Native", "TypeScript", "App Store", "Google Play"],
-        link: "#",
-        github: "#"
+        link: "#"
     },
     {
         title: "Born to Create",
         description: "Influencer platform scaling to 500,000+ monthly interactions. Built robust dashboards and interactive campaign UIs.",
         tags: ["React", "Django", "Micro-Frontends"],
-        link: "#",
-        github: "#"
+        link: "#"
     }
 ];
 
@@ -91,7 +87,6 @@ function TiltCard({ project, index }: { project: any, index: number }) {
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2" /></svg>
                             </div>
                             <div className="flex gap-4 text-white/50">
-                                <a href={project.github} className="hover:text-primary hover:scale-110 transition-all"><Github size={20} /></a>
                                 <a href={project.link} className="hover:text-primary hover:scale-110 transition-all"><ExternalLink size={20} /></a>
                             </div>
                         </div>
